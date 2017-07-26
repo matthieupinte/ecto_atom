@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # EctoAtom
 
 **TODO: Add description**
@@ -18,7 +17,3 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/ecto_atom](https://hexdocs.pm/ecto_atom).
 
-=======
-# ecto_atom
-Ecto atom
->>>>>>> 7c406c70bfbf25134cbbbc8968cc0f34643c05e7
