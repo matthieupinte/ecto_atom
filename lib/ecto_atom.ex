@@ -1,18 +1,18 @@
-@moduledoc """
-
-You can do
-
-defmodule Post do
-  use Ecto.Schema
-  schema "posts" do
-    field :atom_field, Ecto.Atom
-  end
-end
-
-to get :atom as you get "string" ;)
-"""
 defmodule Ecto.Atom do
   @behaviour Ecto.Type
+  @moduledoc """
+
+  You can do
+
+  defmodule Post do
+    use Ecto.Schema
+    schema "posts" do
+      field :atom_field, Ecto.Atom
+    end
+  end
+
+  to get :atom as you get "string" ;)
+  """
 
   def type, do: :string
 
