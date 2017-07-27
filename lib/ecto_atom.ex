@@ -17,14 +17,11 @@ defmodule Ecto.Atom do
   def type, do: :string
 
   def cast(value) when is_atom(value), do: {:ok, value}
-  # `to_string` not working, why ?
-  # def cast(value) when is_string(value), do: {:ok, String.to_atom(value)}
   def cast(_), do: :error
 
   def load(value), do: {:ok, String.to_atom(value)}
 
   def dump(value) when is_atom(value), do: {:ok, Atom.to_string(value)}
-  # `to_string` not working, why ?
-  # def dump(value) when is_string(value), do: {:ok, value}
   def dump(_), do: :error
+
 end

@@ -14,12 +14,6 @@ defmodule Ecto.AtomTest do
     assert Ecto.Atom.load("string") == {:ok, :string}
   end
 
-  # `to_string` not working, why ?
-  # Can't understand the below comment :/
-  test "dump string" do
-    assert Ecto.Atom.dump("string") == :error
-  end
-
   test "can load past dumped data" do
     { :ok, dumped_atom } = Ecto.Atom.dump :atom
     assert Ecto.Atom.load(dumped_atom) == { :ok, :atom }
@@ -27,5 +21,9 @@ defmodule Ecto.AtomTest do
 
   test "dump :atom" do
     assert Ecto.Atom.dump(:atom) == {:ok, "atom"}
+  end
+
+  test "dump string" do
+    assert Ecto.Atom.dump("string") == :error
   end
 end
