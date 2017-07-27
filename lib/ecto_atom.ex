@@ -2,7 +2,7 @@ defmodule Ecto.Atom do
   @behaviour Ecto.Type
   @moduledoc """
 
-  You can do
+  You can do :
 
   defmodule Post do
     use Ecto.Schema
@@ -10,8 +10,6 @@ defmodule Ecto.Atom do
       field :atom_field, Ecto.Atom
     end
   end
-
-  to get :atom as you get "string" ;)
   """
 
   def type, do: :string
