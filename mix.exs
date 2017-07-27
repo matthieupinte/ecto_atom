@@ -28,7 +28,8 @@ defmodule Ecto.Atom.Mixfile do
   end
 
   defp deps do
-    [{:ecto, "~> 2.1"}]
+    [{:ecto, "~> 2.1"},
+     {:ex_doc, "~> 0.14", only: :dev, runtime: false}]
   end
 
   defp package do
