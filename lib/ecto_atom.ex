@@ -1,8 +1,8 @@
 defmodule Ecto.Atom do
-  @behaviour Ecto.Type
+
   @moduledoc """
 
-  You can do :
+  Custom Type to support `:atom`
 
   defmodule Post do
     use Ecto.Schema
@@ -11,6 +11,8 @@ defmodule Ecto.Atom do
     end
   end
   """
+
+  @behaviour Ecto.Type
 
   def type, do: :string
 

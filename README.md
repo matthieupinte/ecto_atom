@@ -1,6 +1,6 @@
-# EctoAtom
+# Ecto.Atom
 
-**TODO: Add description**
+Provide an Ecto custom type Ecto.Atom to manage `:atom`.
 
 ## Installation
 
