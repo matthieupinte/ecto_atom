@@ -1,6 +1,6 @@
 # EctoAtom
 
-**TODO: Add description**
+Implementation of `Ecto.Type` behaviour to allow atom columns in Ecto Schemas
 
 ## Installation
 
