@@ -7,7 +7,10 @@ defmodule Ecto.Atom.Mixfile do
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     description: description(),
+     package: package(),
+     deps: deps(),
+     source_url: "https://github.com/matthieupinte/ecto_atom"]
   end
 
   # Configuration for the OTP application
@@ -18,16 +21,24 @@ defmodule Ecto.Atom.Mixfile do
     [extra_applications: [:logger]]
   end
 
-  # Dependencies can be Hex packages:
-  #
-  #   {:my_dep, "~> 0.3.0"}
-  #
-  # Or git/path repositories:
-  #
-  #   {:my_dep, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
-  #
-  # Type "mix help deps" for more examples and options
+  defp description do
+    """
+    Provide an Ecto custom type Ecto.Atom to manage `:atom`.
+    """
+  end
+
   defp deps do
     [{:ecto, "~> 2.1"}]
+  end
+
+  defp package do
+    # These are the default files included in the package
+    [
+      name: :ecto_atom,
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      maintainers: ["Matthieu Pinte"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/matthieupinte/ecto_atom"}
+    ]
   end
 end
